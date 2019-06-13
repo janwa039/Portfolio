@@ -8,13 +8,13 @@ import Aboutme from "./aboutPage"
 
 function SecondTextArea(){
   return (
-    <div className="second-text-area">
-    <div className="d-writing ">D</div>
-    <div className="e-writing color-icon-btn">E</div>
-    <div className="s-writing">S</div>
-    <div className="i-writing color-icon-btn">I</div>
-    <div className="g-writing">G</div>
-    <div className="n-writing color-icon-btn">N</div>
+    <div className="second-text-area  ">
+    <div className="d-writing animated rotateIn">D</div>
+    <div className="e-writing color-icon-btn bounceInUp">E</div>
+    <div className="s-writing bounceInUp">S</div>
+    <div className="i-writing color-icon-btn bounceInUp">I</div>
+    <div className="g-writing bounceInUp">G</div>
+    <div className="n-writing color-icon-btn bounceInUp">N</div>
   </div>
   )
 }
@@ -53,6 +53,7 @@ class MainLayout extends React.Component{
      }
     this.onMouseMove = this.onMouseMove.bind(this)
     this.onMouseLeave = this.onMouseLeave.bind(this)
+    this.animatedShow = this.animatedShow.bind(this)
   }
 
   onMouseMove(event){
@@ -69,8 +70,23 @@ class MainLayout extends React.Component{
     document.getElementsByClassName('wrap')[0].style.display = 'none'
   }
 
+  animatedShow(){
+    const element =  document.querySelector('.second-text-area ')
+    element.classList.add('animated', 'bounceInUp')
+
+    const element2 =  document.querySelector('.main-text-area')
+    element2.classList.add('animated', 'bounceInDown')
+
+  }
+
+  componentDidMount(){
+    this.animatedShow()
+    
+  }
+
 
 render(){
+  
 
   return (
       <div className="mainBody">
