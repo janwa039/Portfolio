@@ -1,0 +1,86 @@
+.about-me-main{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: white;
+  display: flex;
+  overflow: scroll;
+}
+.aboutme{
+  text-align: center;
+  padding: 15px;
+  font-size: 1.1em;
+  letter-spacing: 3px;
+  color: black;
+  width: 90%;
+  position: relative;
+  height: 60%;
+  
+
+}
+
+.inner-page-1{
+  width:10%;
+  background-color: #8b7498;
+  /* height: 100%; */
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  writing-mode: vertical-rl; 
+  padding-right: 14px;
+  position: relative;
+
+}
+.my-image {
+  padding-bottom: 20px;
+}
+
+.my-image img{
+  border-radius: 50%;
+  width: 200px;
+  height:200px
+}
+
+.icon-second-container {
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+}
+
+.middle-second-text-area-second {
+  display: flex;
+  width: 100%;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 760px){
+  .my-image img{
+    border-radius: 50%;
+    width: 350px;
+    height:350px
+  }
+  .inner-page-1{
+    width:5%;
+    background-color: #883a59;;
+  
+  }
+  .aboutme{
+    width: 95%
+  
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+  .aboutme{
+    font-size: 0.9em;
+  
+  }
+  .middle-second-text-area-second { 
+  display: flex;
+  width: 100%;
+  margin-top: -13px;
+  }
+}
