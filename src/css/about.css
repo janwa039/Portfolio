@@ -1,10 +1,23 @@
 .about-me-main{
-  height: 100vh;
+  height: auto;
   width: 100%;
   position: relative;
   background-color: white;
   display: flex;
-  overflow: scroll;
+  overflow: hidden;
+
+}
+
+.inner-page-1{
+  width:10%;
+  background-color: #8b7498; 
+  height: auto;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  writing-mode: vertical-rl; 
+  padding-right: 14px;
+  position: relative;
 }
 .aboutme{
   text-align: center;
@@ -12,27 +25,19 @@
   font-size: 1.1em;
   letter-spacing: 3px;
   color: black;
-  width: 90%;
+  width: 90%; 
   position: relative;
-  height: 60%;
-  
-
+  height: auto;
+  background-color: white
 }
+.textfield{
+  padding-bottom: 20px; 
+ }
 
-.inner-page-1{
-  width:10%;
-  background-color: #8b7498;
-  /* height: 100%; */
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  writing-mode: vertical-rl; 
-  padding-right: 14px;
-  position: relative;
 
-}
 .my-image {
   padding-bottom: 20px;
+  position: relative;
 }
 
 .my-image img{
@@ -42,17 +47,22 @@
 }
 
 .icon-second-container {
-  position: absolute;
-  left:50%;
-  transform: translateX(-50%);
   width: 90%;
   text-align: center;
+  margin: auto;
 }
 
 .middle-second-text-area-second {
   display: flex;
   width: 100%;
   margin-top: 0;
+  position: relative;
+  height: auto
+}
+
+.icon-btn {
+  display: inline-block;
+  text-align: center;
 }
 
 @media only screen and (min-width: 760px){
@@ -83,4 +93,11 @@
   width: 100%;
   margin-top: -13px;
   }
+
+}
+@media only screen and (min-width: 1000px){
+.icon-btn i .fa-envelope {
+    line-height: 78px;
+    font-size: 48px;
+}
 }
