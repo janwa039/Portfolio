@@ -12,6 +12,7 @@
 // serviceWorker.unregister();
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'normalize.css';
 import Main from './javascript/Main';
 import * as serviceWorker from './serviceWorker';
 

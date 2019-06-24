@@ -1,4 +1,5 @@
 import React from "react";
+import 'normalize.css'
 import "../../css/about.css";
 import Media from "react-media";
 

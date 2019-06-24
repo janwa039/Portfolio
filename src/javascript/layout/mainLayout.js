@@ -1,5 +1,6 @@
 import React from "react";
 import Particles from 'react-particles-js'
+import 'normalize.css'
 import "../../css/main.css";
 import Media from "react-media";
 import SecondPage from "./SecondPage"

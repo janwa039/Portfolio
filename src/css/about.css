@@ -101,3 +101,10 @@
     font-size: 48px;
 }
 }
+
+@media only screen and (min-width: 1500px){
+  .inner-page-1{
+    width:2.5%;
+  }
+
+}

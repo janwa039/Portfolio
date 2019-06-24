@@ -18,8 +18,8 @@
 }
 .card-wrapper{
   display: flex;
-  flex-wrap: wrap;
   position: relative;
+  flex-wrap: wrap;
 }
 .card-title{
   color: white;
@@ -54,3 +54,32 @@
   margin-top: 20px
 
 }
+
+.carousel {
+  position: relative;
+  width: 75%;
+  margin: auto;    
+  padding-top: 20px;
+}
+/* .carousel-inner {
+  height: 350PX;
+} */
+
+.carousel img{
+  height: 400px;
+  /* object-fit: contain; */
+  width: 400px
+}
+
+@media only screen and (max-width: 750px){
+  .card-wrapper{
+    overflow-x: scroll
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width:950px){
+  .card {
+    margin: 50px 50px
+  }
+}
+
