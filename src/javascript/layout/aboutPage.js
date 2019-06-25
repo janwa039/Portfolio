@@ -39,7 +39,7 @@ export default class SecondPage extends React.Component{
           <div className="middle-second-text-area-second">
               <div className="icon-second-container ">
                 <a className="icon-btn" href="#">
-                    <i class="fas fa-envelope"></i>
+                    <i className="fas fa-envelope"></i>
                 </a>
               </div>
         </div>

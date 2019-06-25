@@ -35,7 +35,7 @@ class Ripple extends React.Component{
 
 
   componentDidMount(){
-    this.intervalTime = setTimeout(()=> this.setState({redirect:true}), 3000)
+    this.intervalTime = setTimeout(()=> this.setState({redirect:true}), 2000)
   }
 
   componentWillUnmount(){
@@ -44,7 +44,6 @@ class Ripple extends React.Component{
 
   render(){
     return this.state.redirect? <Main/>:<LandingPage/>
-    // return <Main/>
   }
 
 }

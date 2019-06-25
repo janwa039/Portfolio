@@ -1,8 +1,8 @@
 .secondPageMain{
   width: 100%;
   position: relative;
-  height: 100vh;
-  overflow-x: hidden;
+  height: auto;
+  overflow-y: scroll;
   background-color: #1d002e
 }
 .particle-second-page{

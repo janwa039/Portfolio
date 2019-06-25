@@ -332,3 +332,12 @@ font-weight: 10
   }
 
 }
+
+.footer{
+  background-color: white;
+  color: #1d002f;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-weight: 400
+}

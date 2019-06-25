@@ -3,29 +3,34 @@ import Particles from 'react-particles-js';
 import "../../css/secondPage.css";
 import Media from "react-media";
 import Carosel from './CaroselComponent'
-// import Card from '@material-ui/core/Card';
-// import CardComponent from '../../components/Card'
+
+
 
 function MiddleTextArea(){
   return (
-    <div className="middle-text-area">
+    <div className="middle-second-text-area">
       {/* <div id = "textWrite"></div> */}
       <div className="icon-container">
-        <a className="icon-btn" href="https://www.facebook.com/bassey.a.jennifer">
+        <a className="icon-btn" onClick={()=>socialMedia("https://www.facebook.com/bassey.a.jennifer?ref=bookmarks")}>
           <i className="fab fa-facebook-f" />
         </a>
-        <a className="icon-btn" href="#">
+        <a className="icon-btn"  onClick={()=>socialMedia("https://twitter.com/jai_bom")}>
           <i className="fab fa-twitter" />
         </a>
-        <a className="icon-btn" href="#">
+        <a className="icon-btn"  onClick={()=>socialMedia("https://www.linkedin.com/in/jennifer-affiong-bassey-8ba407139/")}>
           <i className="fab fa-linkedin-in" />
         </a>
-        <a className="icon-btn" href="#">
+        <a className="icon-btn"  onClick={()=>socialMedia("https://github.com/janwa039")}>
           <i className="fab fa-github" />
         </a>
       </div>
     </div>
   );
+}
+
+function socialMedia(url){
+  window.open(url)
+  return false;
 }
 
 function CardsArea(){
@@ -41,7 +46,7 @@ function CardsArea(){
           </p>
         </div>
         <div class="card-body">
-          <a href="https://github.com/janwa039/MemoryGame" class="card-link">Source code link</a>
+          <a onClick={()=>socialMedia("https://github.com/janwa039/MemoryGame")} class="card-link">Source code link</a>
         </div>
       </div>
       <div className="card" style={{width: "18rem"}}>
@@ -53,7 +58,7 @@ function CardsArea(){
           </p>
         </div>
         <div class="card-body">
-          <a href="https://github.com/janwa039/Classic-Arcade-Game" class="card-link">Source code link</a>
+          <a onClick={()=>socialMedia("https://github.com/janwa039/Classic-Arcade-Game")} class="card-link">Source code link</a>
         </div>
       </div>
       <div className="card" style={{width: "18rem"}}>
@@ -65,7 +70,7 @@ function CardsArea(){
           </p>
         </div>
         <div class="card-body">
-          <a href="https://github.com/janwa039/restaurantReviewApp" class="card-link">Source code link</a>
+          <a onClick={()=>socialMedia("https://github.com/janwa039/restaurantReviewApp")} class="card-link">Source code link</a>
         </div>
       </div>
     </div>

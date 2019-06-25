@@ -20,22 +20,26 @@ function SecondTextArea(){
   )
 }
 
+function socialMedia(url){
+  window.open(url)
+  return false;
+}
 
 function MiddleTextArea(){
   return (
     <div className="middle-second-text-area">
       {/* <div id = "textWrite"></div> */}
       <div className="icon-container">
-        <a className="icon-btn" href="https://www.facebook.com/bassey.a.jennifer">
+        <a className="icon-btn" onClick={()=>socialMedia("https://www.facebook.com/bassey.a.jennifer?ref=bookmarks")}>
           <i className="fab fa-facebook-f" />
         </a>
-        <a className="icon-btn" href="https://twitter.com/jai_bom">
+        <a className="icon-btn"  onClick={()=>socialMedia("https://twitter.com/jai_bom")}>
           <i className="fab fa-twitter" />
         </a>
-        <a className="icon-btn" href="https://www.linkedin.com/in/jennifer-affiong-bassey-8ba407139/">
+        <a className="icon-btn"  onClick={()=>socialMedia("https://www.linkedin.com/in/jennifer-affiong-bassey-8ba407139/")}>
           <i className="fab fa-linkedin-in" />
         </a>
-        <a className="icon-btn" href="https://github.com/janwa039">
+        <a className="icon-btn"  onClick={()=>socialMedia("https://github.com/janwa039")}>
           <i className="fab fa-github" />
         </a>
       </div>
@@ -70,6 +74,7 @@ class MainLayout extends React.Component{
     this.animatedShow()
     
   }
+
 
 
 render(){
@@ -126,15 +131,15 @@ render(){
           </Media>
             <SecondTextArea />
           </div>
-          {/* <div className="wrap" >
-            <div id="ball" />
-          </div> */}
         </section>
         <section>
           <Aboutme />
         </section>
         <section className='second-section'>
           <SecondPage />
+        </section>
+        <section className="footer">
+          Powered by @Affiong Baasey
         </section>
       </div>
   );
