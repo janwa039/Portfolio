@@ -52,24 +52,10 @@ class MainLayout extends React.Component{
       x:0,
       enable:true
      }
-    // this.onMouseMove = this.onMouseMove.bind(this)
-    // this.onMouseLeave = this.onMouseLeave.bind(this)
-    // this.animatedShow = this.animatedShow.bind(this)
+
   }
 
-  // onMouseMove(event){
-  //   document.getElementsByClassName('wrap')[0].style.display = 'block'
-  //   var x = event.clientX * 60 / window.innerWidth + "%"
-  //   var y = event.clientY * 60 / window.innerHeight + "%"
-  //   document.getElementsByClassName('wrap')[0].style.top = y 
-  //   document.getElementsByClassName('wrap')[0].style.left = x 
 
-  // }
-
-  // onMouseLeave(){
-
-  //   document.getElementsByClassName('wrap')[0].style.display = 'none'
-  // }
 
   animatedShow(){
     const element =  document.querySelector('.second-text-area ')
