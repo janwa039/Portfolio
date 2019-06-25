@@ -11,14 +11,25 @@ export default class SecondPage extends React.Component{
   render(){
     return (
       <div className ="about-me-main">
-        <div className ="inner-page-1">
-            AFFIONG BASSEY
-        </div>
+        {/* <div className = 'thewrapper'> */}
         <div className = "aboutme">
-          <div class="my-image">
+          <div className="my-image">
             <img src={require('../../images/WhatsApp Image 2018-10-19 at 7.03.58 AM.jpeg')}  alt ='my-profile-image'/>
+            <div className="indivual-container1">
+            <div className= "individual-boxes"></div>
+            <div className= "individual-boxes"></div>
+            <div className= "individual-boxes"></div>
+            <div className= "individual-boxes"></div>
+          </div>
+          <div className="indivual-container2">
+            <div className= "individual-boxes2"></div>
+            <div className= "individual-boxes2"></div>
+            <div className= "individual-boxes2"></div>
+            <div className= "individual-boxes2"></div>
+          </div>
           </div >
-          <div className="textfield"> <p>I' am a Software Engineer who is very passionate about growing, 
+          <div className="textfield"> 
+          <p>I' am a Software Engineer who is very passionate about growing, 
               learning something new. Also want to be in a position where i can also help others grow years 
               from now following this career path. I love building websites and Designing.
               Skills:Javascript, HTML, CSS, reactJS, Adobe photoshop/sketch.
@@ -33,6 +44,7 @@ export default class SecondPage extends React.Component{
               </div>
         </div>
         </div>
+        {/* </div> */}
       </div>
     )
   }

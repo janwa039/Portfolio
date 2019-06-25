@@ -1,3 +1,4 @@
+
 .about-me-main{
   height: auto;
   width: 100%;
@@ -8,24 +9,13 @@
 
 }
 
-.inner-page-1{
-  width:10%;
-  background-color: #8b7498; 
-  height: auto;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  writing-mode: vertical-rl; 
-  padding-right: 14px;
-  position: relative;
-}
 .aboutme{
   text-align: center;
   padding: 15px;
   font-size: 1.1em;
   letter-spacing: 3px;
   color: black;
-  width: 90%; 
+  width: 100%; 
   position: relative;
   height: auto;
   background-color: white
@@ -33,7 +23,6 @@
 .textfield{
   padding-bottom: 20px; 
  }
-
 
 .my-image {
   padding-bottom: 20px;
@@ -44,6 +33,86 @@
   border-radius: 50%;
   width: 200px;
   height:200px
+}
+
+.indivual-container1{
+  height: 120px;
+  display:flex;
+  position: absolute;
+  left:0;
+  top:10px;
+
+}
+.indivual-container2{
+  height: 120px;
+  display:flex;
+  position: absolute;
+  right:0;
+  top:10px;
+
+}
+
+.individual-boxes:nth-child(1){
+  background-color: #8b7498;
+}
+.individual-boxes:nth-child(2){
+  animation-delay: 0.1s;
+}
+.individual-boxes:nth-child(3){
+  animation-delay: 0.2s;
+  background-color: #9c3368;
+}
+.individual-boxes:nth-child(4){
+  animation-delay: 0.3s;
+}
+
+.individual-boxes2:nth-child(1){
+  background-color: #8b7498;
+}
+.individual-boxes2:nth-child(2){
+  animation-delay: 0.1s;
+}
+.individual-boxes2:nth-child(3){
+  animation-delay: 0.2s;
+  background-color: #9c3368;
+}
+.individual-boxes2:nth-child(4){
+  animation-delay: 0.3s;
+}
+
+
+@keyframes loading{
+  0%{
+    height:0
+    
+  }
+  50%{
+    height:120px
+  }
+  100%{
+    height:0
+  }
+}
+.individual-boxes{
+  width:7px;
+  background: white;
+  margin: 0 5px;
+  border-radius: 10px;
+  text-align: center;
+  background: #c77597;
+  animation: loading 0.8s infinite
+
+}
+
+.individual-boxes2{
+  width:7px;
+  background: white;
+  margin: 0 5px;
+  border-radius: 10px;
+  text-align: center;
+  background: #c77597;
+  animation: loading 0.8s infinite
+
 }
 
 .icon-second-container {
@@ -70,15 +139,6 @@
     border-radius: 50%;
     width: 350px;
     height:350px
-  }
-  .inner-page-1{
-    width:5%;
-    background-color: #883a59;;
-  
-  }
-  .aboutme{
-    width: 95%
-  
   }
 
 }
@@ -108,3 +168,4 @@
   }
 
 }
+
