@@ -43,8 +43,8 @@ class Ripple extends React.Component{
   }
 
   render(){
-    // return this.state.redirect? <Main/>:<LandingPage/>
-    return <Main/>
+    return this.state.redirect? <Main/>:<LandingPage/>
+    // return <Main/>
   }
 
 }
