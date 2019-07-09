@@ -2,7 +2,7 @@
   width: 100%;
   position: relative;
   height: auto;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   background-color: #1d002e
 }
 .particle-second-page{
@@ -36,6 +36,12 @@
 .card-body a{
     color: #b7e6e3;
 }
+
+.card-body {
+  padding: 0.5rem;
+}
+
+
 .projects{
   text-align: center;
   padding: 10px;
@@ -61,14 +67,14 @@
   margin: auto;    
   padding-top: 20px;
 }
-/* .carousel-inner {
-  height: 350PX;
-} */
+.card-img-top {
+  height: 351px;
+}
 
 .carousel img{
   height: 400px;
-  /* object-fit: contain; */
-  width: 400px
+  width: 400px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 750px){

@@ -5,6 +5,7 @@ import "../../css/main.css";
 import Media from "react-media";
 import SecondPage from "./SecondPage"
 import Aboutme from "./aboutPage"
+import {MainParticle} from '../../assets/mainParticle'
 
 
 function SecondTextArea(){
@@ -93,18 +94,10 @@ render(){
               {matches =>{
                 if(matches)
                 {
-                  return <Particles params = {{
-                    polygon:{
-                    enable: false
-                  }
-                  }}/>
+                  return <Particles params = {MainParticle}/>
               }
               else{
-                return <Particles params = {{
-                  polygon:{
-                  enable: true
-                }
-                }}/> 
+                return ''
               }
             }}
           </Media>
@@ -139,7 +132,7 @@ render(){
           <SecondPage />
         </section>
         <section className="footer">
-          Powered by @Affiong Baasey
+          Copyright Affiong Baasey 2019
         </section>
       </div>
   );

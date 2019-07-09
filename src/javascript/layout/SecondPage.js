@@ -3,13 +3,13 @@ import Particles from 'react-particles-js';
 import "../../css/secondPage.css";
 import Media from "react-media";
 import Carosel from './CaroselComponent'
+import {SecondParticle} from '../../assets/mainParticle'
 
 
 
 function MiddleTextArea(){
   return (
     <div className="middle-second-text-area">
-      {/* <div id = "textWrite"></div> */}
       <div className="icon-container">
         <a className="icon-btn" onClick={()=>socialMedia("https://www.facebook.com/bassey.a.jennifer?ref=bookmarks")}>
           <i className="fab fa-facebook-f" />
@@ -37,7 +37,7 @@ function CardsArea(){
   return (
     <div className ='card-wrapper'>
       <div className="card" style={{width: "18rem"}}>
-      {/* <img src="..." class="card-img-top" alt="..."/> */}
+      <img src={require('../../images/memory-game-screenshot.png')} className="card-img-top" alt ='my-profile-image'/>
         <div class="card-body">
           <h5 class="card-title">Memory Game</h5>
           <p class="card-text">
@@ -50,6 +50,7 @@ function CardsArea(){
         </div>
       </div>
       <div className="card" style={{width: "18rem"}}>
+      <img src={require('../../images/arcade-game-board.png')} className="card-img-top" alt ='my-profile-image'/>
         <div class="card-body">
           <h5 class="card-title">Arcade Game</h5>
           <p class="card-text">
@@ -62,11 +63,12 @@ function CardsArea(){
         </div>
       </div>
       <div className="card" style={{width: "18rem"}}>
+      <img src={require('../../images/RESTATUARANT-REVIEW.png')} className="card-img-top" alt ='my-profile-image'/>
         <div class="card-body">
           <h5 class="card-title">Restaurant Review App</h5>
           <p class="card-text">
           Static webpage is converted to a mobile-ready web application. 
-          Also added a service worker to load the application offline experience for the user
+          Also added a service worker to load the application for offline experience for the user
           </p>
         </div>
         <div class="card-body">
@@ -91,21 +93,10 @@ export default class SecondPage extends React.Component{
               {matches =>{
                 if(matches)
                 {
-                  return <Particles params = {{
-                    polygon:{
-                    enable: false
-                  }
-                  }}
-                  style={{
-                    color: 'yellow'
-                  }}/>
+                  return <Particles params = {SecondParticle}/>
               }
               else{
-                return <Particles params = {{
-                  polygon:{
-                  enable: true
-                }
-                }}/> 
+                return ''
               }
             }}
           </Media>   
@@ -123,7 +114,7 @@ export default class SecondPage extends React.Component{
                 }
             }}
           </Media>
-        <div className = "div-containing-icon">
+        {/* <div className = "div-containing-icon">
           <Media query="(min-width: 501px)">
               {matches =>{
                 if(matches)
@@ -135,7 +126,7 @@ export default class SecondPage extends React.Component{
                 }
             }}
           </Media>
-        </div>
+        </div> */}
         </div>
     </div>
     )

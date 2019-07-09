@@ -21,12 +21,18 @@
   background-color: white
 }
 .textfield{
-  padding-bottom: 20px; 
+  padding-top: 20px; 
+  width:50%;
+  height: auto;
+  color: white
+
  }
 
 .my-image {
   padding-bottom: 20px;
   position: relative;
+  width: 50%;
+  height: auto;
 }
 
 .my-image img{
@@ -115,23 +121,64 @@
 
 }
 
-.icon-second-container {
-  width: 90%;
+.middle-second-area .icon-container{
+  position: relative;
+  width:50%;
   text-align: center;
-  margin: auto;
+  display: flex;
+
 }
 
-.middle-second-text-area-second {
-  display: flex;
+.icon-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
-  margin-top: 0;
-  position: relative;
-  height: auto
+  text-align: center;
 }
 
 .icon-btn {
   display: inline-block;
   text-align: center;
+}
+
+.icon-btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #1d002f;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.icon-btn {
+  display: inline-block;
+  text-align: center;
+}
+
+.about-me-content{
+  width:90%;
+  max-width: 1200px;
+  height:auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #9c3368;
+  position: relative;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 3px #47012280;
+  margin-bottom: 80px;
+  padding: 30px;
+}
+
+.indivual-container-main{
+  width:100%
 }
 
 @media only screen and (min-width: 760px){
@@ -154,6 +201,36 @@
   margin-top: -13px;
   }
 
+  .about-me-content{
+    margin-bottom: 20px;
+    margin-top:30px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 950px){
+
+  .textfield{
+    width:100%;
+    height: auto;
+    color: #9c3368;
+  
+   }
+  
+  .my-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .about-me-content{
+    background-color: white;
+    box-shadow: 0px 0px transparent;
+   
+  }
+
 }
 @media only screen and (min-width: 1000px){
 .icon-btn i .fa-envelope {
@@ -168,4 +245,7 @@
   }
 
 }
+
+
+
 

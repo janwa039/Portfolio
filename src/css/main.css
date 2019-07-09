@@ -33,7 +33,7 @@ color:white;
   right: 0;
 }
 
-.middle-main{
+.main{
 height: 100%;
 width: 100%;
 /* background-color: rgba(0, 0, 0, 0.1); */
@@ -334,10 +334,12 @@ font-weight: 10
 }
 
 .footer{
-  background-color: white;
-  color: #1d002f;
+  background-color: black;
+  color: #b1cad8;
   width: 100%;
   text-align: center;
   padding: 10px;
   font-weight: 400
 }
+
+
