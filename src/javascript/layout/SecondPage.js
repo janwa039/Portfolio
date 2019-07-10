@@ -89,7 +89,7 @@ export default class SecondPage extends React.Component{
     return (
       <div className = 'secondPageMain'>
         <div className='particle-second-page'>
-          <Media query="(min-width: 1025px)">
+          <Media query="(min-width: 465px)">
               {matches =>{
                 if(matches)
                 {
@@ -114,19 +114,6 @@ export default class SecondPage extends React.Component{
                 }
             }}
           </Media>
-        {/* <div className = "div-containing-icon">
-          <Media query="(min-width: 501px)">
-              {matches =>{
-                if(matches)
-                {
-                  return <MiddleTextArea/>
-                }
-              else{
-                return ''
-                }
-            }}
-          </Media>
-        </div> */}
         </div>
     </div>
     )

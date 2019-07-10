@@ -18,27 +18,44 @@
   width: 100%; 
   position: relative;
   height: auto;
-  background-color: white
+  background-color: #1d002e;
+}
+
+
+#affiong{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #1d002e;
+  font-size: 2rem;
+  
 }
 .textfield{
   padding-top: 20px; 
+  padding-left: 20px;
   width:50%;
   height: auto;
-  color: white
 
  }
+
+ .textfield p {
+  color: #ff4545;
+}
+
+.textfield i {
+  color: #ff4545;
+}
 
 .my-image {
   padding-bottom: 20px;
   position: relative;
   width: 50%;
   height: auto;
+  border-right: 4px solid white ;
 }
 
 .my-image img{
   border-radius: 50%;
   width: 150px;
-  height:150px
+  height:150px;
 }
 
 .indivual-container1{
@@ -57,6 +74,8 @@
   top:10px;
 
 }
+
+
 
 .individual-boxes:nth-child(1){
   background-color: #8b7498;
@@ -121,31 +140,16 @@
 
 }
 
-.middle-second-area .icon-container{
-  position: relative;
-  width:50%;
-  text-align: center;
-  display: flex;
 
-}
-
-.icon-container {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
+.middle-second-text-area .icon-container-second {
+  width: 50%;
   text-align: center;
 }
 
-.icon-btn {
+.icon-container-second .icon-btn {
   display: inline-block;
-  text-align: center;
-}
-
-.icon-btn {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   background-color: #1d002f;
   margin: 10px;
   border-radius: 30%;
@@ -155,11 +159,10 @@
   position: relative;
 }
 
-
-.icon-btn {
-  display: inline-block;
-  text-align: center;
+.icon-container-second .icon-btn i{
+  line-height: 60px;
 }
+
 
 .about-me-content{
   width:90%;
@@ -167,7 +170,7 @@
   height:auto;
   display: flex;
   flex-wrap: wrap;
-  background-color: #9c3368;
+  background-color: #ffffff;
   position: relative;
   margin-top: 120px;
   margin-left: auto;
@@ -195,16 +198,17 @@
     font-size: 0.9em;
   
   }
-  .middle-second-text-area-second { 
-  display: flex;
-  width: 100%;
-  margin-top: -13px;
+  .icon-container-second {
+    width: 100%;
+    text-align: center;
   }
 
-  .about-me-content{
-    margin-bottom: 20px;
-    margin-top:30px;
+  .icon-container-second .icon-btn i {
+    line-height: 60px;
+    color: white
   }
+
+  
 
 
 }
@@ -215,9 +219,21 @@
   .textfield{
     width:100%;
     height: auto;
-    color: #9c3368;
   
    }
+   .textfield p{
+    width:100%;
+    height: auto;
+    color: #9c3368
+  
+   }
+   .aboutme{
+    background-color: white
+  }
+
+   .textfield i {
+    color: white;
+  }
   
   .my-image {
     position: relative;
@@ -225,18 +241,23 @@
     height: auto;
   }
 
+  .my-image img {
+    width: 150px;
+    height: 150px;
+}
+
   .about-me-content{
     background-color: white;
     box-shadow: 0px 0px transparent;
    
   }
 
-}
-@media only screen and (min-width: 1000px){
-.icon-btn i .fa-envelope {
-    line-height: 78px;
-    font-size: 48px;
-}
+  .about-me-content {
+      width: 100%;
+      padding: 0px;
+      margin-top: 70px;
+  }
+
 }
 
 @media only screen and (min-width: 1500px){

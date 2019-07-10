@@ -1,5 +1,5 @@
 import React from "react";
-import 'normalize.css'
+// import 'normalize.css'
 import "../../css/about.css";
 import Media from "react-media";
 
@@ -13,7 +13,7 @@ function MiddleTextArea(){
   return (
     <div className="middle-second-area">
       {/* <div id = "textWrite"></div> */}
-      <div className="icon-container">
+      <div className="icon-container-second">
         <a className="icon-btn" onClick={()=>socialMedia("https://www.facebook.com/bassey.a.jennifer?ref=bookmarks")}>
           <i className="fab fa-facebook-f" />
         </a>
@@ -61,6 +61,7 @@ export default class SecondPage extends React.Component{
           <div className="about-me-content">
           <div className="my-image">
             <img src={require('../../images/WhatsApp Image 2018-10-19 at 7.03.58 AM.jpeg')}  alt ='my-profile-image'/>
+            <p id="affiong">Affiong Bassey</p>
             </div >
 
               <div className="textfield"> 
@@ -71,7 +72,7 @@ export default class SecondPage extends React.Component{
                     Graduated from university of Ottawa with a Bachelor's Degree in Computer Engineering 
                       (minor in Engineering management and Entrepreneurship) 
                   </p>
-                  {/* <MiddleTextArea/> */}
+                  <MiddleTextArea/>
               </div>
           </div>   
         </div>

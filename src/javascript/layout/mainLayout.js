@@ -21,33 +21,6 @@ function SecondTextArea(){
   )
 }
 
-function socialMedia(url){
-  window.open(url)
-  return false;
-}
-
-function MiddleTextArea(){
-  return (
-    <div className="middle-second-text-area">
-      {/* <div id = "textWrite"></div> */}
-      <div className="icon-container">
-        <a className="icon-btn" onClick={()=>socialMedia("https://www.facebook.com/bassey.a.jennifer?ref=bookmarks")}>
-          <i className="fab fa-facebook-f" />
-        </a>
-        <a className="icon-btn"  onClick={()=>socialMedia("https://twitter.com/jai_bom")}>
-          <i className="fab fa-twitter" />
-        </a>
-        <a className="icon-btn"  onClick={()=>socialMedia("https://www.linkedin.com/in/jennifer-affiong-bassey-8ba407139/")}>
-          <i className="fab fa-linkedin-in" />
-        </a>
-        <a className="icon-btn"  onClick={()=>socialMedia("https://github.com/janwa039")}>
-          <i className="fab fa-github" />
-        </a>
-      </div>
-    </div>
-  );
-}
-
 
 class MainLayout extends React.Component{
 
@@ -97,7 +70,7 @@ render(){
                   return <Particles params = {MainParticle}/>
               }
               else{
-                return ''
+                return <Particles params = {MainParticle}/>
               }
             }}
           </Media>
@@ -111,17 +84,6 @@ render(){
               <div className="n2-writing">N</div>
               <div className="y-writing color-icon-btn">Y</div>
             </div>
-            <Media query="(max-width: 500px)">
-              {matches =>{
-                if(matches)
-                {
-                  return <MiddleTextArea/>
-                }
-              else{
-                return ''
-                }
-            }}
-          </Media>
             <SecondTextArea />
           </div>
         </section>
