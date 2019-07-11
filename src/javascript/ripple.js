@@ -1,8 +1,7 @@
 import React from "react";
 import Main from './Main'
 import '../css/ripple.css'
-import ReactDOM from 'react-dom';
-import { Redirect} from 'react-router-dom';
+// import { Redirect} from 'react-router-dom';
 
 function LandingPage(){
   return (

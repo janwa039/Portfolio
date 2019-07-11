@@ -8,13 +8,15 @@ body{
 #root{
 background-color: white;
 height: 100vh;
-overflow-y: scroll
+overflow-y: scroll;
+/* min-width: 150vh; */
 }
 .mainBody{
 background-color: #020202;
 height: 100vh;
 color:white;
-/* min-width: 300vw; */
+width: 100%;
+/* min-width: 70vw; */
 }
 
 .small-view{
@@ -336,8 +338,8 @@ font-weight: 10
 }
 
 .footer{
-  background-color: black;
-  color: #b1cad8;
+  background-color: white;
+  color: #1d002e;
   width: 100%;
   text-align: center;
   padding: 10px;

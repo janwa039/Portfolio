@@ -38,40 +38,40 @@ function CardsArea(){
     <div className ='card-wrapper'>
       <div className="card" style={{width: "18rem"}}>
       <img src={require('../../images/memory-game-screenshot.png')} className="card-img-top" alt ='my-profile-image'/>
-        <div class="card-body">
-          <h5 class="card-title">Memory Game</h5>
-          <p class="card-text">
+        <div className="card-body">
+          <h5 className="card-title">Memory Game</h5>
+          <p  className="card-text">
           Memory Game is a card matching game, where you get to test how well    
           you can remember or recall things last seen.
           </p>
         </div>
-        <div class="card-body">
+        <div className="card-body">
           <a onClick={()=>socialMedia("https://github.com/janwa039/MemoryGame")} class="card-link">Source code link</a>
         </div>
       </div>
       <div className="card" style={{width: "18rem"}}>
       <img src={require('../../images/arcade-game-board.png')} className="card-img-top" alt ='my-profile-image'/>
-        <div class="card-body">
-          <h5 class="card-title">Arcade Game</h5>
-          <p class="card-text">
+        <div className="card-body">
+          <h5 className="card-title">Arcade Game</h5>
+          <p className="card-text">
           A Frogger Arcade Game built with Vanilla JavaScript without any external libraries. 
           The idea of this game is to try and reach the Water without trying to touch a Bug! or you loose lives.
           </p>
         </div>
-        <div class="card-body">
+        <div className="card-body">
           <a onClick={()=>socialMedia("https://github.com/janwa039/Classic-Arcade-Game")} class="card-link">Source code link</a>
         </div>
       </div>
       <div className="card" style={{width: "18rem"}}>
       <img src={require('../../images/RESTATUARANT-REVIEW.png')} className="card-img-top" alt ='my-profile-image'/>
-        <div class="card-body">
-          <h5 class="card-title">Restaurant Review App</h5>
-          <p class="card-text">
+        <div className="card-body">
+          <h5 className="card-title">Restaurant Review App</h5>
+          <p className="card-text">
           Static webpage is converted to a mobile-ready web application. 
           Also added a service worker to load the application for offline experience for the user
           </p>
         </div>
-        <div class="card-body">
+        <div className="card-body">
           <a onClick={()=>socialMedia("https://github.com/janwa039/restaurantReviewApp")} class="card-link">Source code link</a>
         </div>
       </div>

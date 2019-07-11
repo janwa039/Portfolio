@@ -5,6 +5,7 @@ import "../../css/main.css";
 import Media from "react-media";
 import SecondPage from "./SecondPage"
 import Aboutme from "./aboutPage"
+import Form from './Form'
 import {MainParticle} from '../../assets/mainParticle'
 
 
@@ -59,8 +60,8 @@ render(){
         <section className="small-view">
           <div className="mainArea"> 
             <img
-              src={require("../../images/art-black-background-black-clothes-1546035-min.jpg")}
-              className="img-fluid colorGirl"
+              src={require("../../images/art-black-background-black-clothes-1546035-min.jpg") }
+              className="img-fluid colorGirl" alt="yes"
             />
             <div className ='particles'>
             <Media query="(min-width: 1025px)">
@@ -92,6 +93,9 @@ render(){
         </section>
         <section className='second-section'>
           <SecondPage />
+        </section>
+        <section>
+          <Form />
         </section>
         <section className="footer">
           Copyright Affiong Baasey 2019

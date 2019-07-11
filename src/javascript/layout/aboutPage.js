@@ -1,7 +1,8 @@
 import React from "react";
-// import 'normalize.css'
 import "../../css/about.css";
 import Media from "react-media";
+
+
 
 
 function socialMedia(url){
@@ -9,10 +10,11 @@ function socialMedia(url){
   return false;
 }
 
+
+
 function MiddleTextArea(){
   return (
     <div className="middle-second-area">
-      {/* <div id = "textWrite"></div> */}
       <div className="icon-container-second">
         <a className="icon-btn" onClick={()=>socialMedia("https://www.facebook.com/bassey.a.jennifer?ref=bookmarks")}>
           <i className="fab fa-facebook-f" />
@@ -26,9 +28,9 @@ function MiddleTextArea(){
         <a className="icon-btn"  onClick={()=>socialMedia("https://github.com/janwa039")}>
           <i className="fab fa-github" />
         </a>
-        <a className="icon-btn" onClick={()=>socialMedia("#")}>
+        {/* <a className="icon-btn" data-toggle="modal" data-target="#exampleModal" onClick={()=>socialMedia("https://github.com/janwa039")}>
           <i className="fas fa-envelope" />
-        </a>
+        </a> */}
       </div>
     </div>
   );
@@ -37,12 +39,24 @@ function MiddleTextArea(){
 export default class SecondPage extends React.Component{
   constructor(props){
     super(props)
+    this.state={
+      show: false
+    }
+    this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+  }
+
+  handleClose() {
+    this.setState({ show: false });
+  }
+
+  handleShow() {
+    this.setState({ show: true });
   }
 
   render(){
     return (
-      <div className ="about-me-main">
-        {/* <div className = 'thewrapper'> */}
+      <div className="middle-second-area">
         <div className = "aboutme">
           <div className="indivual-container-main">
             <div className="indivual-container1">
@@ -76,7 +90,6 @@ export default class SecondPage extends React.Component{
               </div>
           </div>   
         </div>
-        {/* </div> */}
       </div>
     )
   }

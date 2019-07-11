@@ -2,8 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import { BrowserRouter as Router, Route} from 'react-router-dom';
-import 'normalize.css';
-import Main from './javascript/Main';
+// import 'normalize.css';
+// import Main from './javascript/Main';
 import Ripple from './javascript/ripple'
 import * as serviceWorker from './serviceWorker';
 
